@@ -1,0 +1,39 @@
+{
+	"n_freq_print": 10,
+	"n_freq_checkpoint": 3,
+	"n_workers": 4,
+	"device_id": "cuda:1",
+
+	"input_dim": 3,
+	"window_size":282,
+    "window_shift": 50,
+	"use_model": "cnn",
+
+	"encode_position":true,
+	"transformer_dim": 128,
+	"nhead": 4,
+	"num_encoder_layers": 6,
+	"num_decoder_layers": 6,
+	"dim_feedforward": 1024,
+	"transformer_dropout": 0.1,
+	"transformer_activation": "gelu",
+	"head_activation": "gelu",
+    "baseline_dropout": 0.1,
+
+	"batch_size": 64,
+	"lr": 1e-4,
+	"weight_decay":1e-04,
+	"eps": 1e-10,
+	"lr_scheduler_step_size": 5,
+	"lr_scheduler_gamma": 0.5,
+	"n_epochs": 50,
+
+
+	"experiment": "zero",
+	"clinical_data_dim": 1,
+	"sample_size": 9000,
+	"cnn_blocks": 6,
+	"best_model": false,
+	"checkpoint_path": "None",
+	"data_path": ""
+}
